@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pathgrapher"
+version = "0.1.0"
+description = "Visual directory disk usage viewer"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+pathgrapher = "pathgrapher.__main__:main"
+
+[tool.ruff]
+line-length = 100
